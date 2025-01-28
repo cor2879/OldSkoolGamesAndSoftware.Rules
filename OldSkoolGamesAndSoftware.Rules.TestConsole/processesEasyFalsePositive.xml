@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<processes>
+     <process>
+          <processId>1580</processId>
+          <threads>
+               <thread>
+                    <threadId>7704</threadId>
+                    <processId>25488252</processId>
+                    <callStack>
+						             <frame>
+                              <threadId>71534729</threadId>
+                              <moduleName>WWLIB</moduleName>
+                              <functionName>AXCR::IFindCp</functionName>
+                              <functionOffset>183</functionOffset>
+                              <param1>378743860</param1>
+                              <param2>2</param2>
+                              <param3>23837008</param3>
+                              <param4>2</param4>
+                         </frame>
+                    </callStack>
+               </thread>
+               <thread>
+                    <threadId>5140</threadId>
+                    <processId>25488252</processId>
+                    <callStack>
+                         <frame>
+                              <threadId>71534730</threadId>
+                              <moduleName>OUTLOOK</moduleName>
+                              <functionName>ItemUIHost::HrNeuterDownLevelText</functionName>
+                              <functionOffset>219</functionOffset>
+                              <param1>-1200301575</param1>
+                              <param2>225669224</param2>
+                              <param3>1</param3>
+                              <param4>225669228</param4>
+                         </frame>
+                    </callStack>
+               </thread>
+          </threads>
+     </process>
+</processes>

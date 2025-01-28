@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<modelType identity="d24ba939-b492-40cc-91e7-7fea8904fd02" name="Dump">
+  <objectType identity="e87e3f97-bdee-45ad-9c18-9aeffa47ab87" name="Process" />
+  <objectType identity="fc628e31-5d94-4351-bd09-60a5c2011d87" name="Thread" />
+  <objectType identity="e3134689-8fd5-4b4b-aec2-aa6383e4b0d8" name="Frame" />
+</modelType>

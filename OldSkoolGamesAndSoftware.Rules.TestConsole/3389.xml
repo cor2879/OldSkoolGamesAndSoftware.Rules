@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rule identity="0DFAC968-8149-4D20-8BE3-02F9F774EA1B" 
+      solutionSourceId="9D59A1BC-876F-4F1D-A33C-31599D415007" 
+      legacyId="3389" 
+      author="dacole" 
+      dateCreated="10/29/2013 13:39:14 -04:00">
+  <expression>
+    <setExpression identity="1" propertyName="CallStack" operator="Exists" objectType="fc628e31-5d94-4351-bd09-60a5c2011d87">
+      <logicalExpression identity="3" operator="And" objectType="e3134689-8fd5-4b4b-aec2-aa6383e4b0d8">
+        <binaryExpression identity="5" propertyName="ModuleName" operator="Equal" value="WWLIB" valueType="String" objectType="e3134689-8fd5-4b4b-aec2-aa6383e4b0d8" />
+        <binaryExpression identity="6" propertyName="FunctionName" operator="Equal" value="AXCR::IFindCp" valueType="String" objectType="e3134689-8fd5-4b4b-aec2-aa6383e4b0d8" />
+      </logicalExpression>
+      <logicalExpression identity="4" operator="And" objectType="e3134689-8fd5-4b4b-aec2-aa6383e4b0d8">
+        <binaryExpression identity="7" propertyName="ModuleName" operator="Equal" value="OUTLOOK" valueType="String" objectType="e3134689-8fd5-4b4b-aec2-aa6383e4b0d8" />
+        <binaryExpression identity="8" propertyName="FunctionName" operator="Equal" value="ItemUIHost::HrNeuterDownLevelText" valueType="String" objectType="e3134689-8fd5-4b4b-aec2-aa6383e4b0d8" />
+      </logicalExpression>
+    </setExpression>
+  </expression>
+</rule>

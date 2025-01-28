@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45FBB8E5-2D2B-4EA5-8C83-18B363BA39D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OldSkoolGamesAndSoftware.Rules</RootNamespace>
+    <AssemblyName>OldSkoolGamesAndSoftware.Rules</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\OldSkoolGamesAndSoftware.Rules.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\OldSkoolGamesAndSoftware.Rules.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_Annotation|AnyCPU'">
+    <OutputPath>bin\Release_Annotation\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\Microsoft.Support.Cts.Ude.Annotation.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\DataPointCollection.cs" />
+    <Compile Include="Collections\RuleCommentCollection.cs" />
+    <Compile Include="Collections\RuleExpressionCollection.cs" />
+    <Compile Include="Collections\RuleTable.cs" />
+    <Compile Include="Collections\ModelTypeTable.cs" />
+    <Compile Include="Collections\ObjectTypeTable.cs" />
+    <Compile Include="Objects\BinaryRuleExpression.cs" />
+    <Compile Include="Objects\RuleLogger.cs" />
+    <Compile Include="Objects\LogicalRuleExpression.cs" />
+    <Compile Include="Objects\SetRuleExpression.cs" />
+    <Compile Include="Operators\BinaryOperatorManager.cs" />
+    <Compile Include="Exceptions\RuleException.cs" />
+    <Compile Include="Interfaces\IFactFile.cs" />
+    <Compile Include="Interfaces\IFact.cs" />
+    <Compile Include="Objects\DataPoint.cs" />
+    <Compile Include="Operators\LogicalOperatorManager.cs" />
+    <Compile Include="Operators\OperatorBase.cs" />
+    <Compile Include="Operators\OperatorHelper.cs" />
+    <Compile Include="Operators\SetOperatorManager.cs" />
+    <Compile Include="Objects\RuleComment.cs" />
+    <Compile Include="Objects\Rule.cs" />
+    <Compile Include="Objects\RuleExpressionBase.cs" />
+    <Compile Include="Objects\ModelType.cs" />
+    <Compile Include="Objects\ObjectType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OldSkoolGamesAndSoftware.Rules.Logging\OldSkoolGamesAndSoftware.Logging.csproj">
+      <Project>{590a6364-9f24-4d1c-96ad-1391ea104fa7}</Project>
+      <Name>OldSkoolGamesAndSoftware.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OldSkoolGamesAndSoftware.Utilities\OldSkoolGamesAndSoftware.Utilities.csproj">
+      <Project>{84bf8b4b-6cb4-47ec-a272-72806f582fdd}</Project>
+      <Name>OldSkoolGamesAndSoftware.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
